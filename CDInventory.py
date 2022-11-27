@@ -178,6 +178,7 @@ class FileProcessor:
         """
         with open(file_name, 'wb') as objFile:
             pickle.dump(table, objFile)
+        objFile.close()
 
 
 # -- PRESENTATION (Input/Output) -- #
